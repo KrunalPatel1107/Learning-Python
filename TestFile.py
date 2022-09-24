@@ -12,5 +12,7 @@ while guesscount < guesslimit:
     if user_input == randomnumber:
         print("You guessed the correct number!")
         break
+    elif guesscount == 5:
+        print("Try again! The number this was: " + str(randomnumber))
     else:
         print("Sorry, Try Again!")
